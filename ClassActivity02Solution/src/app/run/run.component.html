@@ -1,0 +1,37 @@
+<mat-card class="parecord-card">
+
+
+  <div class="date" >{{date | date}}</div>
+
+  <mat-icon class="type">directions_run</mat-icon>
+
+  <div class="titlecal">1040 Cal</div>
+  <div class="titletime">49 Min</div>
+
+  <section class="calories">
+    <mat-progress-bar
+      class="example-margin"
+      [color]="color"
+      [mode]="mode"
+      [value]=[calprogressvalue]
+      [bufferValue]="bufferValue">
+    </mat-progress-bar>
+  </section>
+
+  <section class="time">
+    <mat-progress-bar
+      class="example-margin"
+      [color]="color"
+      [mode]="mode"
+      [value]=[minprogressvalue]
+      [bufferValue]="bufferValue">
+    </mat-progress-bar>
+  </section>
+
+  <div class="caloriesgoal">{{calprogressvalue}}%</div>
+  <div class="timegoal">{{minprogressvalue}}%</div>
+
+
+
+
+</mat-card>
