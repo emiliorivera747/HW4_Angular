@@ -1,9 +1,0 @@
-<p>Emails:</p>
-
-  <input type="email" class="form-control input-lg" (keyup.enter)="add($event.target.value)"/>
-
-<ul>
-  <li *ngFor="let email of emails" >
-    {{ email.email }} <button (click)="delete(email.id)">Delete</button>
-  </li>
-</ul>
