@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>464</x>
+      <y>584</y>
+      <w>488</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>[ROOT] app.module.ts 
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>496</x>
+      <y>704</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Providers
+--
+
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>184</x>
+      <y>408</y>
+      <w>128</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>@angular/router
+--
+bg=orange
+RouterModule
+Routes
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>464</x>
+      <y>304</y>
+      <w>488</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>app-routing.module.ts
+--
+
+
+//
+// The confusion comes from the fact both Angular and ES6 are using the same terminology...
+//
+// In ES6/TypeScript:
+//
+// A module is any code file in your project.
+//   An import is a line starting with the import keyword.
+// An export is a line starting with the export keyword.
+//
+//   In Angular:
+//
+//   A module is a class decorated with @NgModule. It serves as a registry (aka container) for all the components, pipes, directives and providers in your application.
+//   An import is what you put in the imports property of the @NgModule decorator. It enables an Angular module to use functionality that was defined in another Angular module.
+//   An export what you put is the exports property of the @NgModule decorator. It enables an Angular module to expose some of its components/directives/pipes to the other modules in the applications. Without it, the components/directives/pipes defined in a module could only be used in that module.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>328</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>routes: Routes
+--
+appRoutes
+-path: ''--&gt; HomeComponent
+-path:'login'-&gt; LoginComponent
+-path:'admin'- AdminComponent
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>808</x>
+      <y>440</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Providers
+--
+
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>512</x>
+      <y>416</y>
+      <w>144</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Imports
+--
+RouterModule
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>488</x>
+      <y>488</y>
+      <w>144</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Exports
+--
+RouterModule
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>424</y>
+      <w>224</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+imports</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>456</y>
+      <w>176</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+Exports a modified version</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>824</x>
+      <y>656</y>
+      <w>120</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Declarations
+--
+AppComponent
+HomeComponent
+LoginComponent
+ParecordComponent
+RegisterComponent
+AdminComponent
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>648</x>
+      <y>712</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>BootStrap
+--
+AppComponent
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>392</y>
+      <w>168</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses</panel_attributes>
+    <additional_attributes>70.0;10.0;160.0;10.0;160.0;160.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>496</x>
+      <y>640</y>
+      <w>128</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Imports
+--
+....
+bg=black
+fg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>656</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+   imports</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>176</x>
+      <y>536</y>
+      <w>192</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>@angular/forms
+--
+bg=orange
+Forms&amp;ReactiveFromsModule</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>448</y>
+      <w>128</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+</panel_attributes>
+    <additional_attributes>140.0;280.0;10.0;280.0;10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>584</x>
+      <y>840</y>
+      <w>200</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>main.ts
+-
+-enableProdMode
+-platformBrowserDynamic
+-environment
+-AppModule
+--
+Boostraps our app!
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>176</x>
+      <y>984</y>
+      <w>248</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>@angular/platform-browser-dynamic
+--
+bg=orange
+platformBrowserDynamic
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>176</x>
+      <y>1056</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>@angular/core
+--
+bg=orange
+enableProdMode
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>856</y>
+      <w>184</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+</panel_attributes>
+    <additional_attributes>210.0;10.0;100.0;10.0;100.0;200.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>584</x>
+      <y>968</y>
+      <w>224</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>environemnt
+--
+A simple constnat for the 'prod' flag.
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>744</y>
+      <w>176</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+imports</panel_attributes>
+    <additional_attributes>70.0;150.0;10.0;150.0;10.0;80.0;200.0;80.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>672</y>
+      <w>200</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>app.component.ts
+-
+-authService
+-currentUser:User
+--
+logout()
+bg=gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>792</y>
+      <w>152</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>app.component.html/css
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1104</x>
+      <y>736</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>656</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+declares</panel_attributes>
+    <additional_attributes>10.0;21.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1256</x>
+      <y>808</y>
+      <w>160</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>home.component.ts
+-
+-courses[]&lt;Course&gt;
+--
+-loadAllPArecords()
+-deletePArecord(date)
+-createPARecord()
+bg=gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>664</y>
+      <w>344</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+</panel_attributes>
+    <additional_attributes>10.0;11.0;60.0;10.0;60.0;230.0;370.0;230.0;370.0;200.0;410.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1248</x>
+      <y>920</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>home.component.html/css
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>888</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>984</x>
+      <y>856</y>
+      <w>200</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>login.component.ts
+-
+-authService: AuthService
+-notifService: NotificationsService
+--
+-login()
+bg=gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>664</y>
+      <w>304</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+</panel_attributes>
+    <additional_attributes>10.0;11.0;60.0;10.0;60.0;230.0;360.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>952</y>
+      <w>160</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>login.component.html/css
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1072</x>
+      <y>920</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1232</x>
+      <y>1024</y>
+      <w>288</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>parecord.component.ts
+-
+@input() -&gt; parecord:PArecord
+@Output()-&gt; deleteEvent: EventEmitter&lt;Date&gt;
+
+bg=gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1248</x>
+      <y>976</y>
+      <w>176</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>parecord.component.html/css
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>992</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>664</y>
+      <w>320</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;..
+</panel_attributes>
+    <additional_attributes>10.0;11.0;60.0;10.0;60.0;230.0;370.0;230.0;370.0;480.0;380.0;480.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>936</y>
+      <w>48</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>176</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>notification.service.ts
+-
+@Injectable('root')
+-
+-showNotif(message)
+bg=yellow
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1504</x>
+      <y>448</y>
+      <w>160</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>parecord.service.ts
+-
+@Injectable('root')
+-
+HttpClient, AuthService
+-
+-getAll()
+-add()
+-delete()
+bg=yellow
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>592</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>PArecord/PAtype
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1360</x>
+      <y>544</y>
+      <w>240</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=.
+uses
+</panel_attributes>
+    <additional_attributes>10.0;80.0;280.0;80.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1360</x>
+      <y>592</y>
+      <w>64</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;60.0;20.0;60.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>360</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>auth.service.ts
+-
+@Injectable('root')
+-
+-login()
+-logout()
+-currentUserValue()
+bg=yellow
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>992</x>
+      <y>568</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>User
+--
+username: string
+password: string
+role: Role,
+toke: String
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>640</y>
+      <w>48</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>432</y>
+      <w>256</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;130.0;300.0;130.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>432</y>
+      <w>728</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;340.0;250.0;340.0;250.0;220.0;530.0;220.0;530.0;110.0;890.0;110.0;890.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1216</x>
+      <y>256</y>
+      <w>440</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>50.0;240.0;10.0;240.0;10.0;10.0;530.0;10.0;530.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1312</x>
+      <y>224</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1104</x>
+      <y>840</y>
+      <w>24</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>928</y>
+      <w>48</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>200</x>
+      <y>704</y>
+      <w>248</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>material-module.ts
+--
+
+wrapper for all material modules
+
+
+//
+// The confusion comes from the fact both Angular and ES6 are using the same terminology...
+//
+// In ES6/TypeScript:
+//
+// A module is any code file in your project.
+//   An import is a line starting with the import keyword.
+// An export is a line starting with the export keyword.
+//
+//   In Angular:
+//
+//   A module is a class decorated with @NgModule. It serves as a registry (aka container) for all the components, pipes, directives and providers in your application.
+//   An import is what you put in the imports property of the @NgModule decorator. It enables an Angular module to use functionality that was defined in another Angular module.
+//   An export what you put is the exports property of the @NgModule decorator. It enables an Angular module to expose some of its components/directives/pipes to the other modules in the applications. Without it, the components/directives/pipes defined in a module could only be used in that module.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>664</y>
+      <w>24</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;10.0;87.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1176</x>
+      <y>584</y>
+      <w>64</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Role
+--
+Admin
+User
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1112</x>
+      <y>592</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses
+</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1328</x>
+      <y>448</y>
+      <w>160</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>user.service.ts
+-
+@Injectable('root')
+-
+-HttpClient
+--
+-getAll()
+-register(user:User)
+bg=yellow
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>176</x>
+      <y>648</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>@angular/platform-browser
+--
+bg=orange
+BrowserModule
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>176</x>
+      <y>592</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>@angular/common/http
+--
+bg=orange
+HttpClientModule
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>608</y>
+      <w>48</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>40.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>552</y>
+      <w>48</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>40.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1400</x>
+      <y>528</y>
+      <w>48</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=.
+uses
+</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1416</x>
+      <y>416</y>
+      <w>240</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1248</x>
+      <y>640</y>
+      <w>152</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>admin.component.ts
+-
+-userService:UserService
+-currentUser:User
+--
+ngOnInit()
+bg=gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1248</x>
+      <y>744</y>
+      <w>152</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>admin.component.html
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1312</x>
+      <y>704</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1112</x>
+      <y>632</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1472</x>
+      <y>640</y>
+      <w>216</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>register.component.ts
+-
+registerForm:FormGroup
+formBuilder: FormBuilder
+router: Router
+authenticationService: AuthService
+userService: UserService
+notification: NotificationService
+--
+ngOnInit()
+onSubmit()
+bg=gray
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1496</x>
+      <y>800</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>register.component.html/css
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1568</x>
+      <y>768</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1216</x>
+      <y>648</y>
+      <w>368</w>
+      <h>448</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>10.0;501.0;10.0;540.0;440.0;540.0;440.0;450.0;290.0;450.0;290.0;10.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>176</x>
+      <y>840</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>jwt.interceptor.ts
+-
+@Injectable()
+-
+intercept()
+bg=cyan
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>1008</y>
+      <w>152</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=..
+</panel_attributes>
+    <additional_attributes>170.0;10.0;170.0;100.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>176</x>
+      <y>768</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>error.interceptor.ts
+-
+@Injectable()
+-
+intercept()
+bg=cyan
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1432</x>
+      <y>288</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>auth.guard.ts
+-
+@Injectable('root')
+-
+-canActivate(route)
+bg=yellow
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1496</x>
+      <y>256</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1312</x>
+      <y>304</y>
+      <w>136</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses
+</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>720</y>
+      <w>184</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;10.0;210.0;100.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>792</y>
+      <w>96</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1392</x>
+      <y>368</y>
+      <w>208</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0;240.0;100.0</additional_attributes>
+  </element>
+</diagram>
